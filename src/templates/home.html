@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}Welcome | {% endblock %}
+
+{% block jumbotron %}
+    <header class="jumbotron">
+
+    <div class="row justify-content-center">
+        <div class="col-sm-5">
+            <div class="float-left">
+                <h2 ><strong>Poliakov Alexandr</strong></h2>
+                <h3 class="lead"><strong>Python Developer</strong></h3>
+            </div>
+        </div>
+        <div class="col-sm-7 d-none d-sm-block">
+            <div class="float-right">
+                <img style="height: 70px; margin: 0px" src="{% static '/img/python.ico' %}">
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+    <div class="col-sm-5">
+        <img class="d-flex img-thumbnail align-self-center" src="{% static '/img/photo.jpg' %}">
+    </div>
+    <div class="col-sm-7">
+        <h5 class="align-self-center pt-3">
+        <ul class="pl-3"  style="list-style: none;">
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i> Ukraine, Kiev</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i> +38093 943 38 83</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i> edbutcher200@gmail.com</li>
+            <li><i class="fa fa-linkedin-square" aria-hidden="true"></i> AlexandrPoliakov</li>
+            <li><i class="fa fa-github" aria-hidden="true"></i> edbutcher</li>
+            <li><i class="fa fa-skype" aria-hidden="true"></i> Ed Butcher</li>
+        </ul>
+        </h5>
+        <div class="col-sm-10">
+            <blockquote class="blockquote">
+            <p class="mb-0">I'm looking for new experiences and knowledge.
+                I want to participate in the creation of business projects and be part of the team.</p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title">Poliakov Alexandr</cite>
+            </footer>
+        </blockquote>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center" >
+            <div class="inline-block">
+            <a class="btn btn-success" href="{% url 'contact' %}" role="button">Contact me</a>
+            <a class="btn btn-primary" href="" role="button">Download Resume</a>
+            </div>
+        </div>
+    </div>
+
+    </header>
+{% endblock %}
+
+
+{% block content %}
+<div id="skills" class="row row-content align-items-center">
+    <div class="col-sm-4 col-md-4 order-md-2">
+        <img class="d-flex mr-3 img-thumbnail align-self-center" src="{% static '/img/skill.jpg' %}" alt="Picture HERE!!!">
+    </div>
+    <div class="col-sm col-md order-md-1">
+      <div class="media">
+          <div class="media-body">
+              <h2 class="mt-0">SKILLS</h2>
+              <p>
+                <strong>Python 2.x (3.x)</strong><br>
+                Web frameworks: Django, Flask.<br>
+                Lib: Beautiful soup, regular expression.<br>
+                <strong>JavaScript (ES6)</strong><br>
+                Node.js.<br>
+                Bootstrap-3(4), LESS, SASS, HTML5, CSS3, JSON.<br>
+                <strong>Database:</strong><br>
+                SQLite, PostgreSQL.<br>
+                  <strong>Languages:</strong><br>
+                English (Intermediate); Russian (native); Ukrainian (native).
+
+              </p>
+          </div>
+      </div>
+    </div>
+</div>
+<hr>
+<div id="courses" class="row row-content align-items-center">
+    <div class="col-sm-4 col-md-4">
+        <img class="d-flex mr-3 img-thumbnail align-self-center" src="{% static '/img/courses.png' %}" alt="Picture HERE!!!">
+    </div>
+    <div class="col-sm col-md">
+      <div class="media">
+
+          <div class="media-body">
+              <h2 class="mt-0">COURSES</h2>
+              <p>
+                  <ol>
+                      <li><a href="https://www.coursera.org/account/accomplishments/certificate/L342AY4HZACB" target="_blank">Programming for Everybody (Getting Started with Python).</a></li>
+                      <li><a href="https://www.coursera.org/account/accomplishments/certificate/QNXBNAPNW5GR" target="_blank">Python Data Structures.</a></li>
+                      <li><a href="https://www.coursera.org/account/accomplishments/certificate/4GBEN6M63TBR" target="_blank">Using Python to Access Web Data.</a></li>
+                      <li><a href="https://www.coursera.org/account/accomplishments/certificate/LBD3WAEPXQWA" target="_blank">Using Databases with Python.</a></li>
+                      <li><a href="https://www.coursera.org/account/accomplishments/certificate/V947XK5H2K2Q" target="_blank">Capstone: Retrieving, Processing, and Visualizing Data with Python.</a></li>
+                      <li><a href="https://www.coursera.org/account/accomplishments/certificate/UWX6HN4VJ5BT" target="_blank">HTML, CSS and JavaScript.</a></li>
+                      <li><a href="https://www.coursera.org/account/accomplishments/certificate/PXBET726KNAZ" target="_blank">Front-End Web UI Frameworks and Tools: Bootstrap 4.</a></li>
+                  </ol>
+              </p>
+          </div>
+      </div>
+    </div>
+</div>
+    <hr>
+<div id="education" class="row row-content align-items-center">
+    <div class="col-sm-4 col-md-4 order-md-2">
+
+        <img class="d-flex mr-3 img-thumbnail align-self-center" src="{% static '/img/education.jpg' %}" alt="Picture HERE!!!">
+    </div>
+    <div class="col-sm col-md order-md-1">
+      <div class="media">
+
+          <div class="media-body">
+              <h2 class="mt-0">EDUCATION</h2>
+              <p>
+                  <strong>Specialist (2016 –2017) - Kiev, Ukraine</strong><br>
+                    State Economy and Technology University of Transport. Higher education. Automated systems of communication technology.<br>
+                    <strong>Bachelor (2008 –2012) - Kiev, Ukraine</strong><br>
+                    State Economy and Technology University of Transport. University education. Automated railway technology.<br>
+
+              </p>
+          </div>
+      </div>
+    </div>
+</div>
+    <hr>
+<div id="experience" class="row row-content align-items-center">
+    <div class="col-sm-4 col-md-4">
+        <img class="d-flex mr-3 img-thumbnail align-self-center" src="{% static '/img/experience.jpg' %}" alt="Picture HERE!!!">
+    </div>
+    <div class="col-sm col-md">
+      <div class="media">
+
+          <div class="media-body">
+              <h2 class="mt-0">EXPERIENCE</h2>
+              <p>
+              <strong>PJSC “KYIVENERGO”, Kyiv</strong><br>
+                  Energy Engineer (May 2014–June 2017)<br>
+
+                  <ul>
+                    <i>Responsibilities:</i>
+                      <li>Organization of exploitation and repairing of boilers. Maintenance of documentation according to the requirements.</li>
+                      <li>Organization of exploitation and repairment of service equipment.</li>
+                      <li>Monitoring of the premises and facilities.</li>
+                  </ul>
+              </p>
+          </div>
+      </div>
+    </div>
+</div>
+    <hr>
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+# Django related
+src/portfolio/settings/local.py
+static_in_pro/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Translations
+*.mo
+*.pot
+
+# Environments
+env_portfolio/
+
+# Other staff:
+.idea/
