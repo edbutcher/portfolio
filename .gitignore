@@ -16,3 +16,4 @@ env_portfolio/
 
 # Other staff:
 .idea/
+*db.sqlite3

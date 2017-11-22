@@ -1,0 +1,7 @@
+# Django related
+portfolio/settings/local.py
+db.sqlite3
+
+# Translations
+*.mo
+*.pot
