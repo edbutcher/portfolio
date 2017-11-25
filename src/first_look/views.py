@@ -41,7 +41,7 @@ def contact(request):
 
         context = {
             "form": form,
-            "title": "Thanks"
+            "title": "Thanks for sending message!*"
         }
 
     return render(request, "contact.html", context)

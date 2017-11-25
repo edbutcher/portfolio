@@ -1,7 +1,6 @@
 # Django related
-src/portfolio/settings/local.py
-src/static_in_env/
-
+portfolio/settings/local.py
+db.sqlite3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -11,10 +10,3 @@ __pycache__/
 # Translations
 *.mo
 *.pot
-
-# Environments
-env_portfolio/
-
-# Other staff:
-.idea/
-*db.sqlite3

@@ -59,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
@@ -135,12 +136,13 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_in_env", "static_r
 
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static_in_pro", "our_static"),
+    os.path.join(BASE_DIR, "static", "our_static"),
     # '/var/www/static/',
 ]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_in_env", "media_root")
+MEDIA_URL = '/media-root/'
+
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "our_static")
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
