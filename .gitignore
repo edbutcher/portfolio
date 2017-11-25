@@ -1,6 +1,7 @@
 # Django related
 src/portfolio/settings/local.py
-static_in_pro/
+src/static_in_env/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,0 +1,31 @@
+body {
+  min-height: 75rem;
+  padding-top: 2rem;
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #007bff;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #007bff;
+}
+
+.jumbotron {
+  background-color: #e5f2ff;
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 70px;
+  margin-left: 0px;
+}
+#contact-list {
+   list-style: none;
+}
